@@ -20,16 +20,16 @@ def printBoard():
         print(r, " |", end="")
 
         for c in range(len(columnName)):
-            if gameBoard[r][c] == "■":
-                print(" ■", end=" |")
-            elif gameBoard[r][c] == "🔺":
-                print(" 🔺", end=" |")
+            if gameBoard[r][c] == "🔵":
+                print("🔵", end=" |")
+            elif gameBoard[r][c] == "🔴":
+                print("🔴", end=" |")
             else:
                 print("   ", end="|")
     print("\n   +———+———+———+———+———+———+———+")
 
 def playConnect4():
-    currentPlayer = '■'
+    currentPlayer = '🔵'
     # start an infinite loop that will run until one of the players wins or the game is a tie.
     while True:
         printBoard()
@@ -57,7 +57,7 @@ def playConnect4():
                     print("It's a tie!")
                     playAgain()
                     return #  used to exit function early if the board is full and there's no winner
-                currentPlayer = '■' if currentPlayer == '🔺' else "🔺"
+                currentPlayer = '🔵' if currentPlayer == '🔴' else "🔴"
                 break
         else: print("That column is full. choose another column.")
 
@@ -106,6 +106,6 @@ def resetGameBoard():
     for r in range(len(gameBoard)):
         for c in range(len(gameBoard[0])):
             gameBoard[r][c] = ""
-    currentPlayer = '■'
+    currentPlayer = '🔵'
 
 playConnect4()
