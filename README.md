@@ -18,3 +18,7 @@ Open your terminal and enter:  ```python connect4ai.py``` (to play with BOT) or 
 The **Minimax Algorithm** is designed to teach a player the optimal moves to win a game. This algorithm aims to maximize the player's advantage while minimizing the opponent's advantage.
 
 By using the Minimax algorithm, a player can thoroughly evaluate each potential move, enabling them to make the most advantageous decisions by anticipating the opponent's best possible responses.
+
+## Documentation
+
+![connect4](https://github.com/velyncodes/connect4game/assets/83008438/cf0b9bc4-c14e-4784-a2e6-eab19a3d8d63)
